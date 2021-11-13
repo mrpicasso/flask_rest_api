@@ -45,4 +45,4 @@ api.add_resource(UserRegister, '/register')
 
 if __name__ == '__main__':
     db.init_app(app)
-    app.run(host='127.0.01', port=8080, debug=True)
+    app.run()
