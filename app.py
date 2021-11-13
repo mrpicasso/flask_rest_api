@@ -22,12 +22,6 @@ api = Api(app)
 # run this method before the first request
 # no longer using creates_tables.py
 
-
-@app.route("/")
-def index():
-    return "<h1>Welcome to our server !!</h1>"
-
-
 '''
 # creates new endpoint which is /auth we send over a username and password
 # it is sendover to the authenticate function to find the correct user object using that username
