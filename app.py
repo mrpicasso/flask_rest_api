@@ -25,7 +25,7 @@ api = Api(app)
 
 @app.route("/")
 def index():
-    return "lets hope this works"
+    return "<h1>Welcome to our server !!</h1>"
 
 
 '''
