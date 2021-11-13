@@ -9,8 +9,6 @@ from resources.user import UserRegister
 from resources.item import Item, ItemList
 from resources.store_resource import Store, StoreList
 
-from db import db
-
 app = Flask(__name__)
 # our database file path
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
@@ -20,11 +18,6 @@ api = Api(app)
 
 # run this method before the first request
 # no longer using creates_tables.py
-
-
-@app.before_first_request
-def create_tables():
-    db.create_all()
 
 
 '''
